@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <div >
+      <form method="post" >
+          <div >
+            <input type="text" id="name" name="username"  placeholder="input your user name" title="your user name" required=""/>
+          </div>
+          <div class="item">
+            <input type="password" id="password" name="password"  placeholder="input your password" title="your password" required=""/>
+          </div>
+          <div class="item clearfix">
+            <span><a href="register" >register</a></span>
+            <button type="submit" id="submitbtn" >login</button>
+          </div>
+          <% if (tip){%>
+          <p ><%=tip%></p>
+          <script type="text/javascript">
+            $(".tip").delay(2000).slideUp();
+          </script>
+          <%}%>
+      </form>
+  </div>
+</body>
+</html>
