@@ -13,4 +13,5 @@ module.exports = function (app) {
     app.get('/newblog',auth.auth,  index.newblog);
     app.get('/blog/:id',auth.auth,  index.blog);
     app.post('/blog/comment', auth.auth, index.comment);
+
 };
