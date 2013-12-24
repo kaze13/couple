@@ -7,12 +7,12 @@
     <meta name="author" content="">
 
     <title>Blog Home Template for Bootstrap 3</title>
-    <link href="/stylesheets/style.css" rel="stylesheet">
+    <link href="../public/stylesheets/style.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../public/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="/stylesheets/blog-post.css" rel="stylesheet">
+    <link href="../public/stylesheets/blog-post.css" rel="stylesheet">
 
 
 </head>
@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php">Start Bootstrap</a>
+            <a class="navbar-brand" href="index">Blog</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -133,7 +133,11 @@
 <!-- JavaScript -->
 
 <script src="/javascripts/jquery-1.10.2.js"></script>
-<script src="/bootstrap/js/bootstrap.js"></script>
+<script src="../public/bootstrap/js/bootstrap.js"></script>
+<script src="../public/javascripts/headroom.js"></script>
 
+<script>
+    $('.navbar').headroom();
+</script>
 </body>
 </html>
